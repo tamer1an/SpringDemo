@@ -5,9 +5,24 @@
 <beans>
 
 	<bean id="triangle" class="org.tamer1an.test1.Triangle" > 
-		<constructor-arg index="0" value="Equilateral"/>
-		<constructor-arg index="1" value="20" type="int"/>
-		<!-- <constructor-arg value="20" type="java.lang.String"/> -->
+		 <property name="PointA" ref="zeroPoint"></property>
+		 <property name="PointB" ref="point2"></property>
+		 <property name="PointC" ref="point3"></property>	
+	</bean>
+	
+	<bean id="zeroPoint" class="org.tamer1an.test1.Point" > 
+		<property name="x" value="0"></property>
+		<property name="y" value="0"></property>		
+	</bean>
+
+	<bean id="point2" class="org.tamer1an.test1.Point" > 
+		<property name="x" value="-20"></property>
+		<property name="y" value="0"></property>		
+	</bean>
+
+	<bean id="point3" class="org.tamer1an.test1.Point" > 
+		<property name="x" value="20"></property>
+		<property name="y" value="0"></property>		
 	</bean>
 
 </beans>
