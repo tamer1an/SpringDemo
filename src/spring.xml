@@ -5,8 +5,9 @@
 <beans>
 
 	<bean id="triangle" class="org.tamer1an.test1.Triangle" > 
-		<constructor-arg value="Equilateral"/>
-		<constructor-arg value="20"/>
+		<constructor-arg index="0" value="Equilateral"/>
+		<constructor-arg index="1" value="20" type="int"/>
+		<!-- <constructor-arg value="20" type="java.lang.String"/> -->
 	</bean>
 
 </beans>
