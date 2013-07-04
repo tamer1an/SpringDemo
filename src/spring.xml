@@ -4,6 +4,8 @@
 
 <beans>
 
-<bean id="triangle" class="org.tamer1an.test1.Triangle"/>  
+	<bean id="triangle" class="org.tamer1an.test1.Triangle" > 
+		<property name="type" value="Equilateral"/>
+	</bean>
 
 </beans>
