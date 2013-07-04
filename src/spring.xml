@@ -5,7 +5,8 @@
 <beans>
 
 	<bean id="triangle" class="org.tamer1an.test1.Triangle" > 
-		<property name="type" value="Equilateral"/>
+		<constructor-arg value="Equilateral"/>
+		<constructor-arg value="20"/>
 	</bean>
 
 </beans>
