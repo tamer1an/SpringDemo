@@ -1,33 +1,33 @@
 package org.tamer1an.test1;
 
 public class Triangle {
-	private Point PointA;
-	private Point PointB;
-	private Point PointC;
+	private Point pointA;
+	private Point pointB;
+	private Point pointC;
 	
 	
 	public Point getPointA() {
-		return PointA;
+		return pointA;
 	}
 
 	public void setPointA(Point pointA) {
-		PointA = pointA;
+		this.pointA = pointA;
 	}
 
 	public Point getPointB() {
-		return PointB;
+		return pointB;
 	}
 
 	public void setPointB(Point pointB) {
-		PointB = pointB;
+		this.pointB = pointB;
 	}
 
 	public Point getPointC() {
-		return PointC;
+		return pointC;
 	}
 
 	public void setPointC(Point pointC) {
-		PointC = pointC;
+		this.pointC = pointC;
 	}
 
 	public void draw() {

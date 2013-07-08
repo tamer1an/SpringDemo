@@ -5,22 +5,22 @@
 <beans>
 
 	<bean id="triangle" class="org.tamer1an.test1.Triangle" > 
-		 <property name="PointA" ref="zeroPoint"></property>
-		 <property name="PointB" ref="point2"></property>
-		 <property name="PointC" ref="point3"></property>	
+		 <property name="PointA" ref="pointA"></property>
+		 <property name="PointB" ref="pointB"></property>
+		 <property name="PointC" ref="pointC"></property>	
 	</bean>
 	
-	<bean id="zeroPoint" class="org.tamer1an.test1.Point" > 
+	<bean id="pointA" class="org.tamer1an.test1.Point" > 
 		<property name="x" value="0"></property>
 		<property name="y" value="0"></property>		
 	</bean>
 
-	<bean id="point2" class="org.tamer1an.test1.Point" > 
+	<bean id="pointB" class="org.tamer1an.test1.Point" > 
 		<property name="x" value="-20"></property>
 		<property name="y" value="0"></property>		
 	</bean>
 
-	<bean id="point3" class="org.tamer1an.test1.Point" > 
+	<bean id="pointC" class="org.tamer1an.test1.Point" > 
 		<property name="x" value="20"></property>
 		<property name="y" value="0"></property>		
 	</bean>
