@@ -8,7 +8,7 @@
 		 <property name="PointA" ref="pointA"></property>
 	</bean>
 	
-	<bean id="triangle" class="org.tamer1an.test1.Triangle" parent="basetriangle"> 
+	<bean id="triangle" class="org.tamer1an.test1.Triangle" parent="basetriangle" init-method="myInit" destroy-method="cleanUp"> 
 		 <property name="PointB" ref="pointB"></property>
 		 <property name="PointC" ref="pointC"></property>	
 	</bean>
