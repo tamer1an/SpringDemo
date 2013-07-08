@@ -28,4 +28,5 @@
 		<property name="y" value="0"></property>		
 	</bean>
 
+	<bean class="org.tamer1an.test1.DisplayNameBeanPostProcessor"/>
 </beans>
