@@ -1,6 +1,9 @@
 package org.tamer1an.test1;
 
-public class Triangle {
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
+
+public class Triangle implements InitializingBean, DisposableBean {
 	private Point pointA;
 	private Point pointB;
 	private Point pointC;
@@ -32,5 +35,15 @@ public class Triangle {
 
 	public void draw() {
 		System.out.println(getPointA().getX() + " - "+getPointB().getY());
+	}
+
+	public void afterPropertiesSet() throws Exception {
+		System.out.println("afterPropertiesSet");
+		
+	}
+
+	public void destroy() throws Exception {
+		System.out.println("destroy");
+		
 	}
 }

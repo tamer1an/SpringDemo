@@ -4,7 +4,7 @@
 
 <beans>
 
-	<bean id="basetriangle" class="org.tamer1an.test1.Triangle" > 
+	<bean id="basetriangle" class="org.tamer1an.test1.Triangle" abstract="true"> 
 		 <property name="PointA" ref="pointA"></property>
 	</bean>
 	
