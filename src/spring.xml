@@ -42,6 +42,6 @@
  		<property name="location" value="pointsconfig.properties"></property> 
  	</bean> <!--  value="classpath:pointsconfig.properties" -->
  	
- <!-- 	<bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"/> -->
- 	<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
+ 	<context:annotation-config/>
+
 </beans>
