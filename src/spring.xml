@@ -14,8 +14,10 @@
 	</bean>
 	
 	<bean id="pointA" class="org.tamer1an.test1.Point" > 
-		<property name="x" value="0"></property>
-		<property name="y" value="0"></property>		
+	  	<property name="x" value="${pointA.pointX}"></property>
+		<property name="y" value="${pointA.pointY}"></property>		 	 
+		<!-- 	<property name="x" value="0"></property>
+			<property name="y" value="0"></property>	  -->	
 	</bean>
 
 	<bean id="pointB" class="org.tamer1an.test1.Point" > 
@@ -29,4 +31,7 @@
 	</bean>
 
  	<bean class="org.tamer1an.test1.MyBeanPP"/> 
+ 	 <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" >
+ 		<property name="location" value="pointsconfig.properties"></property> 
+ 	</bean> <!--  value="classpath:pointsconfig.properties" -->
 </beans>
