@@ -1,5 +1,7 @@
 package org.tamer1an.test1;
 
+import org.springframework.beans.factory.annotation.Required;
+
 public class Circle implements Shape{
 	
 	private Point center;
@@ -16,9 +18,7 @@ public class Circle implements Shape{
 		return center;
 	}
 
-	/**
-	 * @param center the center to set
-	 */
+	@Required
 	public void setCenter(Point center) {
 		this.center = center;
 	}

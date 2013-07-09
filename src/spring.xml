@@ -14,7 +14,7 @@
 	</bean>
 	
 	<bean id="circle" class="org.tamer1an.test1.Circle"> 
-		 <property name="center" ref="pointB"></property>
+		
 	</bean>
 	
 	<bean id="pointA" class="org.tamer1an.test1.Point" > 
@@ -34,8 +34,11 @@
 		<property name="y" value="0"></property>		
 	</bean>
 
- 	<bean class="org.tamer1an.test1.MyBeanPP"/> 
+ 	<!-- <bean class="org.tamer1an.test1.MyBeanPP"/>  -->
+ 	
  	 <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" >
  		<property name="location" value="pointsconfig.properties"></property> 
  	</bean> <!--  value="classpath:pointsconfig.properties" -->
+ 	
+ 	<bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"/>
 </beans>
