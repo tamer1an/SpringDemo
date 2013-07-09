@@ -3,7 +3,7 @@ package org.tamer1an.test1;
 //import org.springframework.beans.factory.DisposableBean;
 //import org.springframework.beans.factory.InitializingBean;
 
-public class Triangle { //implements InitializingBean, DisposableBean {
+public class Triangle implements Shape { //implements InitializingBean, DisposableBean {
 	private Point pointA;
 	private Point pointB;
 	private Point pointC;
@@ -34,7 +34,7 @@ public class Triangle { //implements InitializingBean, DisposableBean {
 	}
 
 	public void draw() {
-		System.out.println(getPointA().getX() + " - "+getPointB().getY());
+		System.out.println("triangle "+getPointA().getX() + " - "+getPointB().getY());
 	}
 
 	/*public void afterPropertiesSet() throws Exception {
