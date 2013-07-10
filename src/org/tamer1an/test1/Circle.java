@@ -2,14 +2,25 @@ package org.tamer1an.test1;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.MessageSource;
 
 public class Circle implements Shape{
 	
 	private Point center;
+	@Autowired
+	private MessageSource messageSource;	
 
-//	@Override
+	public MessageSource getMessageSource() {
+		return messageSource;
+	}
+
+	public void setMessageSource(MessageSource messageSource) {
+		this.messageSource = messageSource;
+	}
+
+	//	@Override
 	public void draw() {
-		System.out.println(center.getX());		
+		System.out.println(this.messageSource.getMessage("drawing.point", new Object[] {center.getX(),center.getY()} , "Default greeting", null));		
 	}
 
 	/**
