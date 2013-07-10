@@ -52,4 +52,6 @@
 		</property>
 	</bean>
 	
+	<context:component-scan base-package="org.tamer1an.test1"/>
+	
 </beans>
